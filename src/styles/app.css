@@ -1,24 +1,28 @@
 @import 'variables.css';
 
 body {
-    background-color: var(--primary);
-    color: var(--text-primary);
-    font-family: var(--font-primary);
-    text-align: center;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  text-align: center;
 }
 
 #doggos {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
 }
 
-h1 {font-size: 3rem;}
+h1 {
+  font-size: 3rem;
+}
 
-#refresh { font-size: 2rem;}
+#refresh {
+  font-size: 2rem;
+}
 
-@media screen and (min-width: 700px){
-    #doggos {
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media screen and (min-width: 700px) {
+  #doggos {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
